@@ -1,0 +1,22 @@
+{
+  "name": "exercice",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "souhail lhajoui"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
