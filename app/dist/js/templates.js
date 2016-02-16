@@ -30,9 +30,11 @@ this["Handlebars"]["templates"]["app/dist/templates/material.handlebars"] = Hand
     + "</td>\r\n  <td>"
     + alias4(((helper = (helper = helpers.Model || (depth0 != null ? depth0.Model : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Model","hash":{},"data":data}) : helper)))
     + "</td>\r\n  <td>"
-    + alias4(((helper = (helper = helpers.Type || (depth0 != null ? depth0.Type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Type","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.Marque || (depth0 != null ? depth0.Marque : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Marque","hash":{},"data":data}) : helper)))
     + "</td>\r\n  <td>"
     + alias4(((helper = (helper = helpers.Etat || (depth0 != null ? depth0.Etat : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Etat","hash":{},"data":data}) : helper)))
+    + "</td>\r\n  <td>"
+    + alias4(((helper = (helper = helpers.Type || (depth0 != null ? depth0.Type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Type","hash":{},"data":data}) : helper)))
     + "</td>\r\n  <td>"
     + alias4(((helper = (helper = helpers.Desc || (depth0 != null ? depth0.Desc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Desc","hash":{},"data":data}) : helper)))
     + "</td>\r\n  <td>\r\n    <a href=\"javascript:void(0)\" class=\"btn btn-success\" id =\"Affectation\">Affectation</a>\r\n    <a href=\"javascript:void(0)\" class=\"btn btn-danger\" id =\"Supprimer\">Supprimer</a>\r\n  </td>\r\n</tr>\r\n";

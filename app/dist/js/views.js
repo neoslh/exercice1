@@ -19,7 +19,6 @@ var TableauView = Backbone.View.extend({
              var element=this.$el;
               element.empty();
               this.collection.forEach(function(e) {
-                console.log(e);
                 var materialview = new MaterielView({
                   model:e
                 });
