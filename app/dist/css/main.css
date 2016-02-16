@@ -1,0 +1,84 @@
+.container {
+  width: 70%;
+}
+.jumbotron {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.jumbotron h1 {
+  font-size: 4em;
+}
+.jumbotron .btn-success {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 0;
+  background-color: #E67E22;
+  border-color: #F1C40F;
+  width: 35%;
+}
+.jumbotron .btn-success:focus,
+.marketing .form-group .btn-success:focus {
+  background-color: #E67E22;
+  border-color: #F1C40F;
+}
+.jumbotron .btn-success:hover,
+.marketing .form-group .btn-success:hover {
+  background-color: #fff;
+  color: #E67E22;
+  border-color: #F1C40F;
+}
+.table-condensed thead {
+  background-color: #E67E22;
+  border-color: #F1C40F;
+  color: #fff;
+}
+.table-condensed thead a {
+  color: #fff;
+}
+.table-condensed .glyphicon {
+  float: left;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 2px;
+}
+.marketing .form-horizontal .form-group input {
+  border-radius: 0px;
+  border: 2px solid #E67E22;
+}
+.marketing .form-horizontal .form-group select {
+  border-radius: 0px;
+  border: 2px solid #E67E22;
+}
+.hide_input {
+  display: none;
+}
+.popover_verification {
+  background: #F36556;
+  opacity: 0.9!important;
+  color: #fff;
+}
+.arrow_verification:after {
+  border-right-color: #F36556 !important;
+  opacity: 0.9 !important;
+}
+.marketing .form-group .btn-success {
+  float: right;
+  border-radius: 0;
+  background-color: #E67E22;
+  border-color: #F1C40F;
+}
+#Affectation {
+  background: #3498DB;
+  border-color: #3498DB;
+  border-radius: 0px;
+}
+#Supprimer {
+  background: #E74C3C;
+  border-color: #E74C3C;
+  border-radius: 0px;
+}
+th,
+td {
+  text-align: center;
+}

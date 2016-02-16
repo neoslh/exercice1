@@ -1,0 +1,27 @@
+<div class="col-lg-12">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th> titre 1 <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+        <th> titre 2 <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+        <th> titre 3 <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+        <th> titre 4 <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#child}}
+      <tr contenteditable="false">dd
+        <td>{{ID}}</td>
+        <td>{{Model}}</td>
+        <td>{{Type}}</td>
+        <td>{{Etat}}</td>
+        <td>{{Desc}}</td>
+        <td>
+          <a href="#" class="btn btn-success" id ="Affectation">Affectation</a>
+          <a href="#" class="btn btn-danger" id ="Supprimer">Supprimer</a>
+        </td>
+      </tr>
+    {{/child}}
+    </tbody>
+</table>
+</div>

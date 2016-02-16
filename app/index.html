@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <title>exercice 1</title>
+  </head>
+  <body>
+     <div class="container">
+       <div class="header clearfix">
+         <h3 class="text-muted">Exercice </h3>
+       </div>
+
+       <div class="jumbotron">
+         <h1>Gestion du parc informatique</h1>
+         <p><a class="btn btn-lg btn-success" href="#/ajouter" role="button">Ajouter un matériel</a> <a class="btn btn-lg btn-success" href="#/afficher" role="button">Afficher tout les matériaux</a></p>
+       </div>
+       <div class="row marketing" id="form">
+           <div class="col-lg-6">
+             <form class="form-horizontal">
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">ID</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='nombre' class="form-control verification" id="ID" placeholder="ID">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">Marque</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='nom' class="form-control verification" id="Marque" placeholder="Marque">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">Model</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='nom' class="form-control verification" id="Model" placeholder="Model">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">Type</label>
+                 <div class="col-sm-6">
+                   <select class="form-control" id="Type" >
+                     <option value = "unité centrale" >unité centrale</option>
+                     <option value = "écran" >écran</option>
+                     <option value = "pc portable" >pc portable</option>
+                     <option value = "clavier" >clavier</option>
+                     <option value = "téléphone" >téléphone</option>
+                   </select>
+                 </div>
+               </div>
+             </form>
+           </div>
+           <div class="col-lg-6">
+             <form class="form-horizontal">
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">Etat</label>
+                 <div class="col-sm-6">
+                   <select class="form-control" id="Etat" >
+                     <option value = "Disponible" >Disponible</option>
+                     <option value = "Hors service" >Hors service</option>
+                     <option value = "En réparation" >En réparation </option>
+                     <option value = "Affecté" >Affecté</option>
+                   </select>
+                 </div>
+               </div>
+               <div class="form-group hide_input">
+                 <label  class="col-sm-3 control-label">Personne</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='nom' class="form-control verification" id="Personne" placeholder="Personne">
+                 </div>
+               </div>
+               <div class="form-group hide_input">
+                 <label  class="col-sm-3 control-label">Service</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='nom' class="form-control verification" id="Service" placeholder="Service">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label  class="col-sm-3 control-label">Desc</label>
+                 <div class="col-sm-6">
+                   <input type="text" data-type='text' class="form-control verification" id="Desc" placeholder="Desc">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <div class="col-sm-3">
+                 </div>
+                 <div class="col-sm-6">
+                   <a id="ajouter" class="btn btn-success" href="#" role="button">Ajouter le matériel</a>                 </div>
+               </div>
+             </form>
+           </div>
+      </div>
+       <div class="row marketing" id="table">
+           <div class="col-lg-12">
+             <table class="table table-condensed">
+               <thead>
+                 <tr>
+                   <th> ID <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                   <th> Marque <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                   <th> Model <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                   <th> Etat <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                   <th> Type <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                   <th>Actions</th>
+
+                 </tr>
+               </thead>
+               <tbody>
+
+               </tbody>
+           </table>
+          </div>
+
+         <footer class="footer">
+           <p> TP </p>
+         </footer>
+       </div>
+    </div>
+    </body>
+  <!-- bower:js -->
+  <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="components/underscore/underscore.js"></script>
+  <script src="components/backbone/backbone.js"></script>
+  <script src="components/handlebars/handlebars.js"></script>
+  <!-- endbower -->
+  <script src="dist/js/data.json" ></script>
+  <script src="dist/js/templates.js" ></script>
+  <script src="dist/js/models.js" ></script>
+  <script src="dist/js/views.js" ></script>
+  <script src="dist/js/route.js" ></script>
+
+  <script src="dist/js/index.min.js" ></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</html>
