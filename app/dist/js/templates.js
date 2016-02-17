@@ -1,7 +1,8 @@
-this["Handlebars"] = this["Handlebars"] || {};
-this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
+define(['handlebars'], function(Handlebars) {
 
-this["Handlebars"]["templates"]["app/dist/templates/main.handlebars"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["Templates"] = this["Templates"] || {};
+
+this["Templates"]["app/dist/templates/main.handlebars"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "      <h3> Anneé :"
@@ -22,7 +23,7 @@ this["Handlebars"]["templates"]["app/dist/templates/main.handlebars"] = Handleba
   return buffer + "  </div>\r\n</div>\r\n";
 },"useData":true});
 
-this["Handlebars"]["templates"]["app/dist/templates/material.handlebars"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+this["Templates"]["app/dist/templates/material.handlebars"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<tr contenteditable=\"false\">\r\n  <td>"
@@ -40,7 +41,7 @@ this["Handlebars"]["templates"]["app/dist/templates/material.handlebars"] = Hand
     + "</td>\r\n  <td>\r\n    <a href=\"javascript:void(0)\" class=\"btn btn-success\" id =\"Affectation\">Affectation</a>\r\n    <a href=\"javascript:void(0)\" class=\"btn btn-danger\" id =\"Supprimer\">Supprimer</a>\r\n  </td>\r\n</tr>\r\n";
 },"useData":true});
 
-this["Handlebars"]["templates"]["app/dist/templates/tableau.handlebars"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["Templates"]["app/dist/templates/tableau.handlebars"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "      <tr contenteditable=\"false\">dd\r\n        <td>"
@@ -62,3 +63,7 @@ this["Handlebars"]["templates"]["app/dist/templates/tableau.handlebars"] = Handl
   if (stack1 != null) { buffer += stack1; }
   return buffer + "    </tbody>\r\n</table>\r\n</div>\r\n";
 },"useData":true});
+
+return this["Templates"];
+
+});

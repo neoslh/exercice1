@@ -82,15 +82,15 @@ module.exports = function (grunt) {
               }
           },
 handlebars: {
-            all: {
-              files: {
-                "app/dist/js/templates.js": "app/dist/templates/*.handlebars"
-              },
-              options: {
-              	namespace: 'Handlebars.templates',
-                exportCommonJS: 'handlebars'
-              }
-            }
+  compile: {
+        options: {
+          amd: true,
+          namespace: 'Templates',
+        },
+        src: ["app/dist/templates/*.handlebars"],
+        dest: "app/dist/js/templates.js"
+      }
+
           },
   wiredep: {
        target: {
