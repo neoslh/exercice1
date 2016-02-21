@@ -4,8 +4,11 @@ define([
   'jquery',
   'Router',
   'MaterielCollectionModule',
-  'MaterielModule'
-], function($,Router,MaterielCollectionModule,MaterielModule){
+  'MaterielModule',
+  'BodyViewModule',
+  'FormlViewModule',
+  'TableauViewModule',
+], function($,Router,MaterielCollectionModule,MaterielModule,BodyViewModule,FormlViewModule,TableauViewModule){
   var initialize = function(){
     Data = [
     	{ID : "5", Marque : "marque5",Model : "mod1",Etat : "Disponible", Type : "UC",Desc : "Unité central"},
@@ -19,7 +22,16 @@ define([
       Data.forEach(function(e) {
         tableau.push(new MaterielModule(e));
       });
+      var tableauView=new TableauViewModule({collection:tableau});
+      var formlView=new FormlViewModule();
 
+      var body = new BodyViewModule({
+          attributes: {
+            tableauViewModule:tableauView,
+            formlViewModule:formlView
+          }
+      });
+      body.render();
     Router.initialize();
   }
 
@@ -69,7 +81,7 @@ define([
         $(this).css("border-color", "#E67E22");
         $(this).popover('destroy');
       }
-  }).on('click','#ajouter',function(){
+  }).on('click','#ajoute',function(){
     var valid=true;
     $('#form .verification').each(function(e){
         valid = valid==false?false:verification(this);
@@ -95,7 +107,7 @@ define([
       $('#Desc').val('');
         location.hash = '#/afficher';
     }
-  }).on('click','.marketing thead th a',function(){
+  }).on('click','.marketing thead th aa',function(){
 
     var index=$(this).parents().closest('tr').children().index($(this).parent());
     for(var i = ($(this).parents().closest('table').find('tbody').children().length -1) ; i > 0 ; i--)
@@ -113,7 +125,7 @@ define([
         $($(this).parents().closest('table').find('tbody').children()[i]).html(tmp);
     }
 
-  }).on('click','#Supprimer',function() {
+  }).on('click','#Supprimer-',function() {
     $(this).parents().closest('tr').remove();
   })
 

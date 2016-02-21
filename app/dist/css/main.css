@@ -68,12 +68,12 @@
   background-color: #E67E22;
   border-color: #F1C40F;
 }
-#Affectation {
+.Affectation {
   background: #3498DB;
   border-color: #3498DB;
   border-radius: 0px;
 }
-#Supprimer {
+.Supprimer {
   background: #E74C3C;
   border-color: #E74C3C;
   border-radius: 0px;

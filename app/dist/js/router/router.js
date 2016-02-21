@@ -15,8 +15,7 @@ define(['jquery','bootstrap','underscore','Backbone','TableauViewModule'], funct
        $(".verification").popover('destroy');
         $("#form").hide();
         $("#table").show();
-        var tableauvew=new TableauViewModule({collection:tableau});
-        tableauvew.render();
+  
       }
   });
 

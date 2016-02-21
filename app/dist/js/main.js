@@ -7,10 +7,15 @@ require.config({
     'handlebars':'../../components/handlebars/handlebars',
     'MaterielViewModule':'views/MaterielView',
     'TableauViewModule':'views/TableauView',
+    'FormlViewModule':'views/FormView',
+    'BodyViewModule':'views/BodyView',
     'MaterielCollectionModule':'collections/MaterielCollection',
     'MaterielModule':'models/Materiel',
     'Router':'router/router',
-    'Templates':'templates'
+    'Templates':'templates',
+    'FormTemplate':'../templates/form.html',
+    'TableTemplate':'../templates/tableau.html',
+    'Traitement':'Traitement'
   },
   shim: {
        'bootstrap':{deps: ['jquery']}
